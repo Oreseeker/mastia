@@ -1,5 +1,5 @@
 <template>
-  <div class="right-arrow">
+  <div class="right-arrow" @click="$emit('click')">
     <font-awesome-icon :icon="{ prefix: 'fa', iconName: 'chevron-right' }" />
   </div>
 </template>
@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 </style>
